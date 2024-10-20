@@ -1,0 +1,78 @@
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="container"] {
+      width: 100%;
+    }
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    background-color: #EEF0F4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.container h1{
+    color: crimson;
+    font-size: 55px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 300px;
+    height: 500px;
+    background-color: rgb(38, 38, 108);
+}
+
+#clear-button {
+    background-color: red;
+    margin-top: 50px;
+}
+
+input, button {
+    background-color: lightpink;
+    color: black;
+    border-radius: 10px;
+    width: 125px;
+}
+
+input::placeholder {
+    color: black;
+}
+
+.output {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 400px;
+    height: 250px;
+    background-color: lightblue;
+}
+
+#storage-items-list {
+    list-style-type: decimal;
+    text-align: center;
+    font-size: larger;
+}
+
+#storage-items-list li {
+    font-weight: bold;
+}
